@@ -8,6 +8,7 @@ let audioReactiveCircle;
 // Create a function to preload music
 // Extra: Split the file into 4 parts (vocals, melody, bass, drums)
 // Have them play at the same time
+// Song Credit: Madeon - All My Friends x Imperium (NO HOPE. Flip)
 function preload() {
   music = loadSound('allmyfriends [music].mp3');
   vocals = loadSound('allmyfriends [vocals].mp3');
@@ -146,6 +147,7 @@ class AudioReactiveCircle {
   update() {
     if (keyIsDown(32)) {
       this.visible = !this.visible;
+      console.log('space');
     }
   }
 
